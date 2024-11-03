@@ -1,0 +1,59 @@
+.header {
+    background-image:url('../asset/banner.jpg') ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 750px;
+   
+   
+  }
+  
+  .container-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+  
+  
+  }
+  .logo{
+    position: absolute; 
+    top: 0; 
+    padding: 10px 20%;
+    text-align: left;
+  
+  }
+  .logo img{
+   
+    height: 80px;
+   
+  }
+  
+  .navbar {
+    position: absolute;          /* Posiciona el menú sobre la imagen */
+    top: 0;                      /* Lo coloca en la parte superior del header */
+    width: 100%;                /* El menú ocupa todo el ancho del header */
+    background-color:rgba(255, 255, 255, 0.); /* Fondo transparente para el menú */
+    padding: 10px 20%;            /* Espaciado superior e inferior */
+    text-align: right;          /*  contenido a la derecha*/
+    z-index: 1;                  /* Asegura que el menú esté por encima de la imagen */
+  }
+  
+  
+  .navbar ul {
+    list-style: none;            /* Quita los puntos de la lista */
+    padding: 0;                  /* Quita el padding por defecto */
+    margin: 0;                   /* Quita el margin por defecto */
+  }
+  
+  .navbar li {
+    display: inline;              /* Muestra los elementos de la lista en línea */
+    margin: 0 15px;              /* Espacio entre los elementos del menú */
+  }
+  
+  .navbar a {
+    text-decoration: none;       /* Quita el subrayado de los enlaces */
+    color: #e4c022;                 /* Color del texto del menú */
+    font-weight: bold;           /* Texto en negrita */
+  }

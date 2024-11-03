@@ -1,0 +1,38 @@
+/* contenedor global*/
+.global{
+    display: flex;
+    gap: 20px;
+    padding:5%;
+  }
+  /* contenedor main*/
+  .container-principal {
+      flex: 3;
+  }
+  
+  .title {
+    display: flex;
+    text-align:;
+    justify-content:space-around;
+    padding-top: 50px;
+  
+  }
+  .title h2{
+    font-size: 4em;
+    color: #85243b;
+                     
+    
+  }
+  
+  .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr) );
+    padding: 10%;
+    column-gap: 8%;
+    row-gap: 8%;
+    width: 100%;
+    
+    
+  }
+  
+  
+  

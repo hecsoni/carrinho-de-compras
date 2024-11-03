@@ -1,0 +1,132 @@
+/* section Carrinho*/
+
+.carrinho {
+  
+    border: 1px solid #85243b;
+    width: 30%;
+    margin-top: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: auto;
+    position: sticky !important;
+    top: 20px;
+    transition: .3s;
+  }
+  
+  .carrinho h3 {
+    background-color: #85243b;
+    color:#fff ;
+    text-align: center;
+    padding: 30px 0;
+  
+  }
+  .carrinho .item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #af3a55;
+    padding: 20px;
+  }
+  
+  
+  .carrinho .item img{
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 80px;
+   
+  }
+  
+  .carrinho .item .title-item{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .carrinho .item .quantity-selector{
+    display: inline-block;
+    margin-right: 25px;
+  }
+  
+  .carrinho .item .car-item-quantity{
+    border: none;
+    font-size: 18px;
+    background: transparent;
+    display: inline-block;
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .carrinho .item .quantity-selector i{
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1.5px solid #85243b;
+    cursor: pointer;
+  }
+  
+  .carrinho .item .price-bttn{
+    font-weight: bold;
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 5px;
+  
+  }
+  .carrinho .item .delete-bttn{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #85243b;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1.5px solid #85243b;
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    z-index: 20;
+  }
+  .carrinho .item .delete-bttn i{
+    pointer-events: none;
+  }
+  
+  .total-car{
+    background-color: #af3a55;
+    padding: 30px;
+  
+  }
+  
+  .total-car .fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  .total-car .bttn-pagar{
+    display: block;
+    width: 100%;
+    border: none;
+    background: #fff ;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .total-car .bttn-pagar:hover{
+    scale: 1.05;
+  }

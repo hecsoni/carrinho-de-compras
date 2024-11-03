@@ -1,0 +1,49 @@
+/*card produtos*/
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 12px;
+    text-align: center;
+  }
+  
+  .card img {
+    height: 150px;;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .card h3{
+    margin: 10px o 5px;
+    font-size: 1,5em;
+    color: #333;
+  }
+  
+  .card p{
+    font-size: 1em;
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  
+  .card button {
+    padding: 10px 50px;
+    border: none;
+    background-color: #85243b;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .card button:hover {
+    background-color: #af3a55;
+  }
