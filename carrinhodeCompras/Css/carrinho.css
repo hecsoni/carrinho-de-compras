@@ -9,8 +9,6 @@
  
 }
 
-
-
 .carrinho {
   
     border: 1px solid #85243b;
@@ -23,30 +21,8 @@
     top: 20px;
     transition: .3s;
   }
-  /* Para pantallas móviles */
-@media (max-width: 768px) {
-  .carrinho {
-    display: none; /* Oculto en pantallas pequeñas */
-    position: fixed;
-    right: 0;
-    top: 0;
-    background-color: white;
-    width: 80%;
-    height: 100%;
-    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
-    z-index: 100;
-    padding: 20px;
-    /* Otros estilos de diseño */
-  }
+ 
 
-  .car-icon {
-    display: block; /* Ícono visible solo en móviles */
-  }
-
-  .carrinho.show {
-    display: block; /* Mostrar carrito cuando se active */
-  }
-}
   .carrinho h3 {
     background-color: #85243b;
     color:#fff ;
@@ -164,3 +140,93 @@
   .total-car .bttn-pagar:hover{
     scale: 1.05;
   }
+
+  /* Para pantallas de 1000px */
+
+  @media (max-width: 1250px){
+    .carrinho .item img{
+      width: 20%;
+      height: auto;
+      border-radius: 10px;
+      margin-right: 30px;
+     
+    }
+    .carrinho .item .quantity-selector{
+      display: inline-block;
+      margin-right: 15px;
+    }
+    
+    .carrinho .item .car-item-quantity{
+      border: none;
+      font-size: 15px;
+      background: transparent;
+      display: inline-block;
+      width: 30px;
+      padding: 5px;
+      text-align: center;
+    }
+    
+    .carrinho .item .quantity-selector i{
+      font-size: 15px;
+      width: 22px;
+      height: 22px;
+      line-height: 22px;
+      text-align: center;
+      border-radius: 50%;
+      border: 1.5px solid #85243b;
+      cursor: pointer;
+    }
+    
+    .carrinho .item .price-bttn{
+      font-weight: bold;
+      display: inline-block;
+      font-size: 15px;
+      margin-bottom: 5px;
+    
+    }
+    .carrinho .item .delete-bttn{
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      color: #85243b;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      border-radius: 50%;
+      border: 1.5px solid #85243b;
+      cursor: pointer;
+      display: block;
+      background: transparent;
+      z-index: 20;
+    }
+    .carrinho .item .delete-bttn i{
+      pointer-events: none;
+    }
+    
+  
+  }
+  /* Para pantallas móviles */
+@media (max-width: 768px) {
+  .carrinho {
+    display: none; /* Oculto en pantallas pequeñas */
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: white;
+    width: 80%;
+    height: 100%;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    z-index: 100;
+    padding: 20px;
+    /* Otros estilos de diseño */
+  }
+
+  .car-icon {
+    display: block; /* Ícono visible solo en móviles */
+  }
+
+  .carrinho.show {
+    display: block; /* Mostrar carrito cuando se active */
+  }
+}
