@@ -18,7 +18,7 @@ body {
   
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   body {
     font-size: 14px;
   }
@@ -31,16 +31,11 @@ body {
 @media (max-width: 480px) {
   body {
     font-size: 12px;
-    padding: 10px;
+
   }
-  .header {
-    flex-direction: column; /* Cambiar a columna para que el logo y el menú se apilen */
-  }
+ 
   .card {
-    width: 100%; /* Hacer que las tarjetas ocupen el ancho completo */
+    width: 80%; /* Hacer que las tarjetas ocupen el ancho completo */
   }
-  .navbar ul {
-    flex-direction: column; /* Menú en columna para móviles */
-    text-align: center;
-  }
+
 }

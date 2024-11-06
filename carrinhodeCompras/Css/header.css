@@ -7,16 +7,7 @@
    
    
   }
-  @media (max-width: 1000px) {
-    .header {
-      background-image:url('../asset/banner.jpg') ;
-      background-size: cover;
-      background-position: center;
-      position: relative;
-      height: 300px;
-     
-    }
-  }
+ 
   .container-header{
     display: flex;
     align-items: center;
@@ -65,4 +56,39 @@
     text-decoration: none;       /* Quita el subrayado de los enlaces */
     color: #e4c022;                 /* Color del texto del menú */
     font-weight: bold;           /* Texto en negrita */
+  }
+
+
+  @media (max-width: 1000px) {
+    .header {
+      background-image:url('../asset/banner.jpg') ;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      height: 300px;
+     
+    }
+  }
+
+  @media (max-width: 480px) {
+    
+
+    .header {
+      background-image:url('../asset/banner.jpg') ;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      height: 200px;
+     
+    }
+    
+    .logo img{
+     
+      height: 40px;
+     
+    }
+    .navbar ul {
+      flex-direction: column; /* Menú en columna para móviles */
+      text-align: center;
+    }
   }
