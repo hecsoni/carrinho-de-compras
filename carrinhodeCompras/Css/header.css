@@ -7,7 +7,16 @@
    
    
   }
-  
+  @media (max-width: 1000px) {
+    .header {
+      background-image:url('../asset/banner.jpg') ;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      height: 300px;
+     
+    }
+  }
   .container-header{
     display: flex;
     align-items: center;

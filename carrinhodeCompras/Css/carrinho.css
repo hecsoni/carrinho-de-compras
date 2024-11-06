@@ -1,4 +1,15 @@
 /* section Carrinho*/
+.car-icon {
+  display: none; /* Oculto en pantallas grandes */
+  font-size: 24px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+ 
+}
+
+
 
 .carrinho {
   
@@ -12,7 +23,30 @@
     top: 20px;
     transition: .3s;
   }
-  
+  /* Para pantallas móviles */
+@media (max-width: 768px) {
+  .carrinho {
+    display: none; /* Oculto en pantallas pequeñas */
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: white;
+    width: 80%;
+    height: 100%;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    z-index: 100;
+    padding: 20px;
+    /* Otros estilos de diseño */
+  }
+
+  .car-icon {
+    display: block; /* Ícono visible solo en móviles */
+  }
+
+  .carrinho.show {
+    display: block; /* Mostrar carrito cuando se active */
+  }
+}
   .carrinho h3 {
     background-color: #85243b;
     color:#fff ;
