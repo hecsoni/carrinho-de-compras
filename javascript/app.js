@@ -101,9 +101,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const cartIcon = document.querySelector('.car-icon');
     const cart = document.querySelector('.carrinho');
+    const container = document.querySelector('.container-principal');
     
     cartIcon.addEventListener('click', () => {
       cart.classList.toggle('show');
+      container.classList.toggle('hidden'); // Ocultar o mostrar el contenedor
     });
   });
   

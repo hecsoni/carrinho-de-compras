@@ -235,5 +235,9 @@
   .carrinho.show {
     display: block; /* Mostrar carrito cuando se active */
   }
-  
+
+   /* Ocultar el contenedor principal cuando el carrito está abierto */
+   .container-principal.hidden {
+    display: none;
+  }
 }
