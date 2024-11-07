@@ -207,6 +207,7 @@
   
   }
   /* Para pantallas móviles */
+ 
 @media (max-width: 900px) {
   .carrinho {
     display: none; /* Oculto en pantallas pequeñas */
@@ -224,9 +225,15 @@
 
   .car-icon {
     display: block; /* Ícono visible solo en móviles */
+    position: fixed;            /* Fijar el icono en la parte superior */
+    top: 10px;                  /* Ajustar según necesites */
+    right: 10px;                /* Ajustar según necesites */
+    z-index: 1100;              /* Por encima del carrito para que sea clickeable */
+    cursor: pointer;            /* Cambiar cursor al pasar sobre el icono */
   }
 
   .carrinho.show {
     display: block; /* Mostrar carrito cuando se active */
   }
+  
 }
