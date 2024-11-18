@@ -5,6 +5,7 @@
   const cartItemsContainer = document.querySelector('.items-car');
   const cartTotal = document.querySelector('.price-total');
   const addToCartButtons = document.querySelectorAll('.card button');
+  const cartCount = document.querySelector('.container-icon-car span'); // Contador del carrito
   
   // Estado del carrito (inicia vacío)
   let cart = [];
@@ -14,7 +15,13 @@
     let total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
     cartTotal.textContent = `R$ ${total.toFixed(2)}`;
   }
-  
+
+  // Función para actualizar la cantidad de productos en el contador del carrito
+function updateCartCount() {
+  const itemCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+  cartCount.textContent = itemCount; // Actualizar el número en el <span>
+}
+
   // Función para renderizar los items del carrito
   function renderCart() {
     cartItemsContainer.innerHTML = ''; // Limpiar carrito
@@ -23,6 +30,7 @@
       // Si el carrito está vacío, mostrar un mensaje o mantener el contenedor vacío
       cartItemsContainer.innerHTML = '<p></p>';
       cartTotal.textContent = 'R$ 0.00'; // Reiniciar el total
+      updateCartCount(); // Asegurar que el contador se actualice
       return; // Terminar la función si no hay productos
     }
   
@@ -51,6 +59,7 @@
     });
   
     updateCartTotal(); // Actualizar el total
+    updateCartCount(); // Actualizar el contador
   }
   
   // Función para agregar un producto al carrito

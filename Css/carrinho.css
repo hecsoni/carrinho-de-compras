@@ -1,5 +1,5 @@
 /* section Carrinho*/
-.car-icon {
+.container-icon-car {
   display: none; /* Oculto en pantallas grandes */
   font-size: 24px;
   cursor: pointer;
@@ -223,13 +223,31 @@
     /* Otros estilos de diseño */
   }
 
-  .car-icon {
+  .container-icon-car {
     display: block; /* Ícono visible solo en móviles */
     position: fixed;            /* Fijar el icono en la parte superior */
     top: 10px;                  /* Ajustar según necesites */
     right: 10px;                /* Ajustar según necesites */
     z-index: 1100;              /* Por encima del carrito para que sea clickeable */
     cursor: pointer;            /* Cambiar cursor al pasar sobre el icono */
+  }
+  .car-icon{
+    position: relative;
+    
+  }
+  .container-icon-car  span{
+    display: flex;
+    width: 15px;
+    height: 15px;
+    background-color:#af3a55;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: -10%;
+    right: -8px;
   }
 
   .carrinho.show {
